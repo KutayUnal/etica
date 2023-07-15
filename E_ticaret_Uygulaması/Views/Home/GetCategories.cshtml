@@ -1,0 +1,21 @@
+﻿@model IEnumerable<E_ticaret_Uygulaması.Entity.Category>
+
+<ul class="list-group">
+    <li class="list-group-item">
+        <a href="/Home/List">
+            Tüm Kategoriler
+        </a>
+    </li>
+
+
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item ">
+            <a href="/Home/List/@item.Id">
+                @item.Name
+            </a>
+        </li>
+
+    }
+
+</ul>
